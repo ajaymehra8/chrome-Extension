@@ -1,0 +1,73 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif; 
+  background: #E3F2FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.popup{
+  width:350px;
+ 
+}
+.popup :where(.picker,header,.allColors,.color){
+  display: flex;
+}
+.popup .picker{
+  background: #E3F2FD;
+   padding: 30px 0;
+  
+  align-items: center;
+  justify-content: center;
+}
+.picker #colorPicker{
+  outline:none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #5372f0;
+}
+.pickedColors{
+  margin: 10px 15px;
+}
+.pickedColors.hide{
+  display:none;
+}
+.pickedColors header{
+  justify-content: space-between;
+}
+.pickedColors .clearAll{
+color:#5372f0;
+  font-size:0.9rem;
+}
+.allColors{
+  margin: 10px 0;
+  flex-wrap:wrap;
+}
+.allColors .color{
+  cursor: pointer;
+  margin-bottom: 10px;
+  width:calc(100%/3);
+}
+.allColors .color .rect {
+  display: block;
+  height: 22px;
+  width: 22px;
+  border-radius:4px;
+  
+}
+.allColors .color .value{
+  font-size: 0.96rem;
+  font-weight:500;
+  text-transform:uppercase;
+}
